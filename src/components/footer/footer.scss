@@ -1,0 +1,70 @@
+@import "../../css-config/mixins.scss";
+
+.footer {
+    width: 100%;
+    .footer-content {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        @include md {
+            justify-content: space-between;
+            padding: 50px 0;
+        }
+        .col {
+            min-width: 200px;
+            max-width: 400px;
+            .title {
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .text {
+                color: rgba(0,0,0,0.5);
+                font-size: 15px;
+               
+
+            }
+            .c-item{
+                display: flex;
+                margin-bottom: 10px;
+                svg{
+                    flex-shrink: 0;
+                    font-style: 14px;
+                    margin-right: 10px;
+                    margin-top: 4px;
+                    color: rgba(0,0,0,0.5);
+                }
+            }
+            span {
+                &.text{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .bottom-bar {
+        margin-top: 20px;
+        padding: 0 20px;
+        .bottom-bar-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            @include md {
+                display: flex;
+                flex-direction: row;
+            }
+            .text {
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+}
